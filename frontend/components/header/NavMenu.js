@@ -42,11 +42,6 @@ const NavMenu = ({ connected, publicKey }) => {
           />
         ))}
         <li>
-          {/* <button className="flex space-x-3">
-                        <UserCircleIcon style={{ height: 24, width: 24, color: '#15ec3c' }} />
-                        <span className="text-sm font-semibold text-[#15ec3c]">{connected ? truncate(publicKey.toString()) : 'Connect Wallet'}</span>
-                    </button> */}
-
           <WalletMultiButton className="flex space-x-3">
             <UserCircleIcon
               style={{ height: 24, width: 24, color: "#15ec3c" }}

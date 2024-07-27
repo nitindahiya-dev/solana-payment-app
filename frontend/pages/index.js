@@ -12,6 +12,8 @@ import { getAvatarUrl } from "../functions/getAvatarUrl";
 import { useCashApp } from "../hooks/cashapp";
 
 const Home = () => {
+  const [qrCode, setQrCode] = useState(false);
+
   const {
     connected,
     publicKey,
@@ -22,7 +24,6 @@ const Home = () => {
     setNewTransactionModalOpen,
     transactionQRModalOpen,
     setTransactionQRModalOpen,
-    
   } = useCashApp();
 
   return (
@@ -38,6 +39,7 @@ const Home = () => {
           setModalOpen={setTransactionQRModalOpen}
           userAddress={userAddress}
           myKey={publicKey}
+          setQrCode={setQrCode}
         />
 
         <NavMenu connected={connected} publicKey={publicKey} />
