@@ -25,7 +25,7 @@
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/your-username/solana-transaction-app.git
+    git clone https://github.com/nitindahiya-dev/solana-transaction-app.git
     cd solana-transaction-app
     ```
 
